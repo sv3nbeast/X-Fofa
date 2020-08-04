@@ -4,7 +4,7 @@
 ![](./run.png)
 
 ### 用法
-* Usage: python3 X-Fofa.py 'app="Solr"' Solr  94bbbb177cxxxxxfeddb8c7d413d5d61
+* Usage: python3 X-Fofa.py 'app="Solr"' Solr  94bbbb177c4a564feddb8c7d413d5d61
 * Usage: python3 X-Fofa.py  Fofa搜索语法   搜索结果文件名   Fofa的Cookie的_fofapro_ars_session值
 * 然后按照需求输入 从哪页开始 和 获取多少页数 即可
 ### 获取_fofapro_ars_session值
