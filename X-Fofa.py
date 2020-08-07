@@ -78,10 +78,12 @@ def start(search,file,cookie):
         for i in range(int(startPage),endPage):
             url='https://classic.fofa.so/result?page={}&qbase64={}'.format(i,search)
             req = requests.get(url=url,headers=usera(),cookies=cookies)
+            if '登录' in req.text:
+                print('[- Cookie已失效，请重新填写https://classic.fofa.so的Cookie,不是https://fofa.so的Cookie')
+                break
             print("[+ 正在读取第{}页   状态码:{}".format(i,req.status_code))
             doc=pq(req.text)
-            if '登录' in doc:
-                print('[- Cookie已失效，请重新填写')
+
             url=doc('div.results_content .list_mod_t').items()
             title=doc('div.list_mod_c ul').items()
 
