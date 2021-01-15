@@ -14,6 +14,7 @@ PS:为解决部分漏洞在搜索引擎内包含较少，Fofa的API为固定数�
 ### 获取_fofapro_ars_session值
 
 CTRL+C,CTRL+V
+目标一定要是https://classic.fofa.so/ 而不是新版的地址哦
 
 
 ![](./getCookie.png)
