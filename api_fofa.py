@@ -3,8 +3,8 @@ import base64,os,requests
 import argparse
 import json
 
-email = '824656015@qq.com'
-key = '6453d19cbaa5500d8e682409dfa54c15'
+email = 'xx'
+key = 'xx'
 full = 'false' #搜索结果是否包含一年前的，fofa的默认搜索结果为一年内数据
 
 def getFofa(page,search,output):
