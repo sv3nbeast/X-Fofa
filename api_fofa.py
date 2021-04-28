@@ -11,7 +11,6 @@ def getFofa(page,search,output):
 
     global result
     
-    page = int(page) / 100
     search = base64.b64encode(search.encode('utf-8')).decode('utf-8')
     url = "https://fofa.so/api/v1/search/all?email={}&key={}&qbase64={}&page={}&full={}".format(email,key,search,page,full)
     response = requests.get(url)
