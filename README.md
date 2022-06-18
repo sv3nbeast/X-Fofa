@@ -1,5 +1,5 @@
 # X-Fofa
-基于Fofa会员前提，获得任意页数的目标数量URL
+基于Fofa会员前提，调用API，超过1w条不会扣F币
 
 ![](./cmd.png)
 
