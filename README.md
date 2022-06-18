@@ -8,14 +8,5 @@ PS:为解决部分漏洞在搜索引擎内包含较少，Fofa的API为固定数�
 ```
 
 ### 用法
-* Usage: python3 X-Fofa.py 'app="Solr"' Solr  94bbbb177c4a564feddb8c7d413d5d61
-* Usage: python3 X-Fofa.py  Fofa搜索语法   搜索结果文件名   Fofa的Cookie的_fofapro_ars_session值
-* 然后按照需求输入 从哪页开始 和 获取多少页数 即可
-### 获取_fofapro_ars_session值
-
-CTRL+C,CTRL+V
-目标一定要是https://classic.fofa.so/ 而不是新版的地址哦
-
-
-![](./getCookie.png)
-
+* Usage: python3 X-Fofa.py -q 'app = xxx' -o result.txt
+* Usage: python3 X-Fofa.py -q 'app = xxx' -all 1 -o result.txt 
