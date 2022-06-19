@@ -59,7 +59,7 @@ def getFofa(page,size,search,output,all):
 
                 for i in range(1,92):
 
-                    before_time = now_time + datetime.timedelta(days=i+1)
+                    before_time = now_time + datetime.timedelta(days=-i+2)
                     before_time_nyr = before_time.strftime('%Y-%m-%d')
 
                     searchTime = search + '&& before = "{}"'.format(before_time_nyr)
