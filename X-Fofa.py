@@ -44,7 +44,7 @@ def getFofa(page,size,search,output,all):
                     before_time = now_time + datetime.timedelta(days=-i+1)
                     before_time_nyr = before_time.strftime('%Y-%m-%d')
 
-                    search64 = search + 'after="{after_time_nyr}" && before = "{before_time_nyr}"'
+                    search64 = search + '&& after="{after_time_nyr}" && before = "{before_time_nyr}"'
                     search64 = base64.b64encode(search64.encode('utf-8')).decode('utf-8')
                     url = "https://fofa.info/api/v1/search/all?email={}&key={}&qbase64={}&page={}&size={}&full={}".format(email,key,search64,page,size,full)
                     print("[+] {} -- {}".format(after_time_nyr,before_time_nyr))
