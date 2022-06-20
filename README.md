@@ -3,6 +3,7 @@
 
 ![](./cmd.png)
 
+![image](https://user-images.githubusercontent.com/55974091/174513563-3e0592e3-7abc-4262-8075-cf808e7fca33.png)
 
 
 ### 用法
